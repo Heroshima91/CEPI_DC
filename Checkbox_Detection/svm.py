@@ -9,6 +9,9 @@ from sklearn.metrics import accuracy_score
 from sklearn import neighbors
 import joblib
 
+"""
+    preprocess loads the dataset and convert labels into sparse matrix of labels
+"""
 def preprocess():
     fd = open('svm_X.txt', 'r')
     X = simplejson.load(fd)
