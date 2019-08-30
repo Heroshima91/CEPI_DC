@@ -10,6 +10,10 @@ from sklearn import neighbors
 import joblib
 from tslearn.metrics import dtw
 
+
+"""
+    preprocess loads the dataset and convert labels into sparse matrix of labels
+"""
 def preprocess():
     fd = open('svm_X.txt', 'r')
     X = simplejson.load(fd)
