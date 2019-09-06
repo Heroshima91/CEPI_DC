@@ -84,7 +84,7 @@ def bestMatch(img,detector,pts,fn,txt,imgs):
     txt.write(fn+" matched for "+str(classification)+" with prob : "+ str(max(ref_sim))+"\n")
     txt.write(str(ref_sim)+"\n")
     
-    #check up if there are enough matching between the two images
+    #check up if there are enough matching between the two images > 45% here, but can be changed
     if(max(ref_sim)>=0.45):
         projection(img,kp,imgs[classification],pts[classification][0],final_good[classification],fn,classification)
     else:
