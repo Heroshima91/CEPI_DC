@@ -242,9 +242,11 @@ def main():
                 checkWindow(img, fn)
                 
     import simplejson
+    #svm x looks like [ [[...], [...], [...],...] , [] [] ] and refers to number of intersection around a window
     fd = open('svm_X.txt', 'w')
     simplejson.dump(svm_X, fd)
     fd.close()
+    #svm y looks like [6,5,6,...] and contains the number of the checkbox which is checked
     ft = open('svm_y.txt', 'w')
     simplejson.dump(svm_y, fd)
     ft.close()
