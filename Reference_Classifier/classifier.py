@@ -41,7 +41,7 @@ def projection(skewed_image,kp2,orig_image,kp1,good,fn,classification):
         scaleRecovered = math.sqrt(ss * ss + sc * sc)
         thetaRecovered = math.atan2(ss, sc) * 180 / math.pi
         print("Calculated scale difference: %.2f\nCalculated rotation difference: %.2f" % (scaleRecovered, thetaRecovered))
-        #check if the transformation is not aberrant
+        #check if the transformation is not aberrant with scaleRecovered and thetaRecovered (can be changed)
         if(scaleRecovered >= 0.85 and scaleRecovered <= 1.2 and thetaRecovered >= -0.3 and thetaRecovered <= 0.3):
             deskew(skewed_image,orig_image,-M,fn,classification)
         else:
