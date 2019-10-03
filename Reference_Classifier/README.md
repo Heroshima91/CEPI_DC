@@ -34,5 +34,5 @@ La ligne 88 contient une vérification de si deux images ont 45% de taux de ress
 
 ## Liens vers les tutoriels
 
-Akaze : https://docs.opencv.org/3.4/db/d70/tutorial_akaze_matching.html
-Sift/Surf : https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_feature_homography/py_feature_homography.html
+[Akaze](https://docs.opencv.org/3.4/db/d70/tutorial_akaze_matching.html)
+[Sift/Surf](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_feature_homography/py_feature_homography.html)
